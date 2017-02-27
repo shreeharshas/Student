@@ -22,7 +22,7 @@ namespace DashBoardMVC
         {
             routes.IgnoreRoute("{resource.axd/{*pathinfo}");
             routes.MapRoute("Default", "{controller}/{action}/{id}", 
-                new { controller = "HomeController", action ="Index", id= UrlParameter.Optional}
+                new { controller = "Demo", action ="Index", id= UrlParameter.Optional}
             );
         }
     }
