@@ -10,6 +10,7 @@ namespace DashBoardMVC.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.UsageSample = @"Please Use the Url 'Demo/Test' or 'Demo/Test/1' to see the Book Details";
             return View();
         }
 

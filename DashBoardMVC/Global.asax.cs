@@ -17,5 +17,13 @@ namespace DashBoardMVC
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        public void RegisterRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource.axd/{*pathinfo}");
+            routes.MapRoute("Default", "{controller}/{action}/{id}", 
+                new { controller = "HomeController", action ="Index", id= UrlParameter.Optional}
+            );
+        }
     }
 }
